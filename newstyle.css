@@ -1,0 +1,76 @@
+ .Er{
+        color:red
+    }
+h1 
+{
+    font-style: oblique;
+}
+table, th, td 
+{
+    border: 1px solid black;
+}
+body{
+background-image: url("imagess.jpg");
+background-color:#ccccff;
+}
+.formfield 
+{
+  overflow: hidden;
+  background-color: #ddd;
+  align:right;
+}
+.topnav 
+{
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+    background-color: #003399;
+    color: white;
+}
+.sub{
+    background-color: #003399;
+    border: none;
+    color:white;
+    padding: 16px 32px;
+    text-decoration: none;
+    text-decoration-color: black;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.sub:hover {
+    background-color:blueviolet;
+    color: black;
+}
+
+.info label
+{
+    float: left;
+    width: 150px;
+}
+.first label
+{
+    float: left;
+    width: 150px;
+}
+.val_error
+{
+	color: #FF1F1F;
+}

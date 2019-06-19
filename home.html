@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Welcome to NITD</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+  }
+img.background 
+{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    -webkit-filter: blur(30px); 
+    filter: blur(30px);
+}
+img.back
+{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -2;
+}
+body 
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header 
+{
+    background-color:transparent;
+    padding:8px;
+    text-align: center;
+    font-size: 35px;
+}
+.column
+{
+    float: left;
+    padding:10px;
+    height: 300px; 
+	background: transparent;
+}
+.column.side 
+{
+    width: 25%;
+}
+.column.middle
+{
+    width: 50%;
+	background-color:transparent;
+}
+.row
+{
+overflow:hidden;
+}
+.footer
+{
+    background-color:#ccf5ff;
+    padding:2px;
+    text-align: center;
+	color: #333;
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 600px) 
+{
+    .column.side, .column.middle 
+	{
+        width: 100%;
+    }
+}
+ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00264d ;
+}
+li 
+{
+    float: left;
+    border-right:1px solid #bbb;
+}
+li:last-child 
+{
+    border-right: none;
+}
+li a
+{
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) 
+{
+    background-color: #111;
+}
+#notice
+{
+background-color:transparent;
+}
+
+#act
+{
+    background-color:#ccf5ff;
+}
+.button 
+{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 20px;
+  color: #ccf5ff;
+  background-color: #00264d;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+</style>
+</head>
+<body>
+<img class="background" src="imagess.jpg" alt="Pineapple" width="300" height="100">
+<img class="back" src="imagess.jpg" alt="Pineapple" width="300" height="100">
+<p>
+<div class="header">
+  <h2 style="color:#00284d;"><img src="NIT_Durgapur_Logo.png" alt="NITD LOGO" style="width:10%" align="left"><img src="NIT_Durgapur_Logo.png" alt="NITD LOGO" style="width:10%" align="right">WELCOME TO NIT DURGAPUR</h2>
+</div>
+</p>
+<p>
+<ul>
+  <li><a class="active" id="act" href="#home">Home</a></li>
+  <li><a href="faq.html">FAQ</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a href="#about">About</a></li>
+</ul>
+</p>
+<div class="row">
+  <div class="column side" style="background-color:transparent;">
+  <br />
+  <br />
+  <br />
+  <a href="loginAdmin.php">
+	 <input type="button" class="button" value="Admin Login" />
+  <br/>
+ </a>
+  <br />
+  <a href="loginStudent.php">
+  <input type="button" class="button" value="Student Login">
+  <br/>
+  </a>
+  <br />
+  <a href="StudentRegistration - Copy.php">
+  <tr><input type="button" class="button" value="Student Registration"></tr>
+  </a>
+</div>
+  <div class="column middle" style="background-color:transparent;">
+  <img src="NIT-durgapur.jpg" alt="Pineapple" width="650" height="300">
+  </div>
+  <div class="column side" style="background-color:transparent;">
+  <table>
+  <br />
+  <br /> 
+  <br />
+  <tr> <a href="department.html">
+  <input type="button" class="button" value="Departments"></a></tr>
+  <br />
+  <br />
+  <tr><a href="classroutine.html"><input type="button" class="button" value="Class Routine"></a></tr>
+  <br/>
+  <br />
+  <tr><a href="#department.html"><input type="button" class="button" value="Examination Schedule"></a></tr>
+  </table>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Copyright © 2018 SIS.</p>
+</div>
+
+</body>
+</html>
